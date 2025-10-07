@@ -2,7 +2,33 @@
 {% load static %}
 {% block content%}
 
-    <h1>This is Home page</h1>
-    <img class = "mylogo" src="{% static 'images/1.jpg'%}">
+    <section class="hero" >
+        <div>
+            <h2>Welcome to Your Homepage</h2>
+            <p>Bless Your Day! Shall we read?</p>
+            <button>Let's Go!</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Feature One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card">
+            <h3>Feature Two</h3>
+            <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus.</p>
+        </div>
+        <div class="card">
+            <h3>Feature Three</h3>
+            <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MySite. All rights reserved. |
+        <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+    <!--<img class = "mylogo" src="{% static 'images/1.jpg'%}">-->
 
 {% endblock content %}

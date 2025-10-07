@@ -1,7 +1,51 @@
-h1{
-    color: aquamarine;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
 }
 .mylogo{
     height: 250px;
     width: auto;
 }
+header {
+    background-color: #1a830c;
+    color: white;
+}
+
+header .container {
+    max-width: 1200px;       /* optional, keeps content centered */
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;            /* row layout */
+    align-items: center;      /* vertical alignment */
+    justify-content: space-between; /* pushes h1 left, nav right */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;               /* spacing between links */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+
